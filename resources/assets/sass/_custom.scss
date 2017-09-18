@@ -1,0 +1,30 @@
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.navbar-static-top {
+  margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-brand {
+  font-weight: bold;
+}
+
+.panel-heading > .dropdown {
+  .dropdown-toggle {
+    color: #636b6f;
+  }
+  .btn {
+    padding: 3px 8px;
+  }
+  .dropdown-menu {
+    margin-top: 0;
+    min-width: 46px;
+    li > a {
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: right;
+    }
+  }
+}

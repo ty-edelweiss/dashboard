@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Http\ViewComposers;
+
+use Illuminate\View\View;
+
+class DatabaseComposer
+{
+    /**
+     * Create a new app composer.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Bind data to the view.
+     *
+     * @param  View  $view
+     * @return void
+     */
+    public function compose(View $view)
+    {
+        //
+    }
+}

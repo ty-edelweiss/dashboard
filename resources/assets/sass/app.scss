@@ -1,0 +1,262 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "custom";
+@import "loading";
+
+body {
+  min-width: 768px;
+}
+
+.box-1 {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  height: 430px;
+}
+
+.box-2 {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  height: 882px;
+}
+
+.box-content {
+  margin-left: 15px;
+  margin-right: 15px;
+  .box-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  .box-body {
+    max-width: 700px;
+  }
+  table {
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-top: 22px;
+    thead, tbody {
+      th.table-label-column, td.table-label-column {
+        label {
+          margin-bottom: 0;
+        }
+      }
+      th.table-input-column, td.table-input-column {
+        padding: 0;
+        input {
+          border: 0;
+          width: 100%;
+        }
+      }
+      th.table-btn-column, td.table-btn-column {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        padding: 0;
+        button {
+          width: 100%;
+          min-height: 36.5px;
+          border-radius: 0 0 3px 3px;
+        }
+      }
+      th.table-left-column, td.table-left-column {
+        border-left: none;
+      }
+      th.table-right-column, td.table-right-column {
+        border-right: none;
+      }
+      th.table-bottom-column, td.table-bottom-column {
+        border-bottom: none;
+        border-radius: 0 0 3px 3px;
+      }
+    }
+  }
+  .table-bordered {
+    border: none;
+  }
+}
+
+.box-primary {
+  background-color: $brand-primary;
+  border-radius: 3px;
+}
+
+.box-success {
+  background-color: $brand-success;
+  border-radius: 3px;
+}
+
+.box-info {
+  background-color: $brand-info;
+  border-radius: 3px;
+}
+
+.box-warning {
+  background-color: $brand-warning;
+  border-radius: 3px;
+}
+
+.box-danger {
+  background-color: $brand-danger;
+  border-radius: 3px;
+}
+
+.panel-wall {
+  width: 100%;
+  border-radius: 0;
+  .panel-heading {
+    border-radius: 0;
+    h4 {
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.panel-box {
+  margin-top: 22px;
+}
+
+.page-container {
+  position: relative;
+  div.page-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $brand-primary;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.icon-anchor {
+  font-size: 24px;
+}
+
+.linear-container {
+  display: block;
+  .linear-item-left {
+    float: left;
+    .dropdown > button {
+      color: #333333;
+    }
+  }
+  .linear-item-right {
+    float: right;
+    .dropdown > button {
+      color: #333333;
+    }
+  }
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+.table-chart {
+  .chart-input-column {
+  }
+  .chart-left-header {
+    border-right: none;
+  }
+  .chart-right-header {
+    border-left: none;
+  }
+  .chart-column {
+    background-color: #ffffff;
+    .chart-box {
+      position: relative;
+      min-height: 480px;
+      min-width: 400px;
+      .none-chart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 30px;
+        text-align: center;
+      }
+    }
+  }
+  tr.hover-row:hover {
+    background-color: #f5f5f5;
+  }
+  tr > .hover-column:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.chart-input {
+  label {
+    padding-left: 4px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+  }
+}
+
+.select-menu {
+  ul.selector {
+    padding: 0;
+    span.selector-btn {
+      text-align: center;
+      cursor: pointer;
+    }
+    li {
+      display: none;
+      list-style: none;
+      span {
+        display: block;
+        width: 160px;
+        margin: auto;
+        text-align: center;
+      }
+    }
+    li.active {
+      display: inline-block;
+    }
+  }
+}
+
+.addon-menu {
+  ul.addon {
+    padding: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+}
+
+.chart-btn {
+  width: 100%;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f8fa;
+  .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 240px;
+  }
+}
